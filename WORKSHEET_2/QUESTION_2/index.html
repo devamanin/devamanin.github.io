@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Kumar - 20BCS3907</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            
+        }
+        .chemical-formula{
+            /* background-color: rgba(221, 104, 49, 0.842); */
+            background-color: rgb(137, 163, 241);
+            margin-top: 40px;
+            border-radius: 10px;
+            width: 80%;
+            height: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .chemical-formula span{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            text-shadow: 0 2px 4px rgb(129, 129, 129);
+        }
+        .chemical-formula .head{
+            align-self: center;
+            margin-bottom: 10px;
+            font-weight: 580;
+            font-size: 28px;
+        }
+        .breaks::after{
+            content: '\a';
+            white-space: pre;
+        }
+        .chemical-formula .text-decorate-ratio{
+            display: inline-block;
+            background-color: rgb(46, 94, 240);
+            width: 45px;
+            height: 25px;
+            text-align: center;
+            border-radius: 25px;
+
+        }
+        .chemical-formula .text-decorate-ex{
+            display: inline-block;
+            background-color: rgb(46, 94, 240);
+            width: 58px;
+            height: 28px;
+            text-align: center;
+            border-radius: 25px;
+        }
+        /* .chemical-formula .text-decorate:nth-child(1)::after{
+            content: ' ';
+            display: inline-block;
+            background-color: rgba(49, 167, 221, 0.5);
+            transform: translate(-80%, 25%);
+            width: 50px;
+            height: 50px;
+        } */
+        .mathematical-formula{
+            background-color: rgba(85, 219, 85, 0.842);
+            margin-top: 30px;
+            width: 80%;
+            height: auto;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .mathematical-formula span{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            text-shadow: 0 2px 4px rgb(129, 129, 129);
+        }
+        .mathematical-formula .head{
+            align-self: center;
+            margin-bottom: 10px;
+            font-weight: 580;
+            font-size: 28px;
+        }
+        .mathematical-formula .text-decorate-main{
+            display: inline-block;
+            background-color: rgb(23, 184, 63);
+            width: 75px;
+            height: 35px;
+            text-align: center;
+            border-radius: 25px;
+        }
+        .mathematical-formula .text-decorate-ex{
+            display: inline-block;
+            background-color: rgb(23, 184, 63);
+            width: 75px;
+            height: 35px;
+            text-align: center;
+            border-radius: 25px;
+        }
+        .my-quote{
+            margin-top: 30px;
+            padding: 20px;
+            width: 320px;
+            height: 190px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(236, 128, 78, 0.842);;
+            border-radius: 10px;
+        }
+        .my-quote .head{
+            align-self: center;
+            color: rgb(214, 16, 16);
+            font-size: 68px;
+        }
+        .my-quote span{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 580;
+            color: rgb(238, 45, 45);
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="chemical-formula">
+            <span class="breaks head">Chemical Formula</span>
+            <span class="breaks">Chemical formula is an expression that shows the elements in a compound and the relative proportions of those elements.</span>
+            <span class="breaks">For example: </span>
+            <span class="breaks">Water is composed of hydrogen and oxygen in a <span class="text-decorate-ratio">2:1</span> ratio.</span>
+            <span class="breaks">Therefore,</span>
+            <span class="breaks">The chemical formula for water is given by <span class="text-decorate-ex">H<sub>2</sub>O</span></span>
+        </div>
+        <div class="mathematical-formula">
+            <span class="break head">Quadractic Polynomial Expansion</span>
+            <span class="break">Expansion of <span class="text-decorate-main"> (x+y)<sup>2</sup></span> is given by:</span>
+            <span class="break"><span class="text-decorate-ex"> (x+y)<sup>2</sup></span> &equals; x<sup>2</sup> + 2xy + y<sup>2</sup> </span>
+        </div>
+        <div class="my-quote">
+            <span class="break head">&#x201C;</span>
+            <span>Without requirements or design, programming is the art of adding bugs to an empty text file.</span>
+        </div>
+    </div>
+</body>
+</html>

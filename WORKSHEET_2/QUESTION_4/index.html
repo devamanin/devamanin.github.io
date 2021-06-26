@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Computer Science</title>
+    <style>
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background-color: #333; */
+    }
+    li{
+        float: left;
+
+    }
+    li a{
+        display: block;
+        color: rgb(58, 58, 58);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+    li a:hover{
+        color: rgb(214, 52, 52);
+    }
+    .active::after{
+        content: ' ';
+        width: 100%;
+        display: block;
+        height: 3px;
+        background-color: #19ce8c;
+    }
+    nav::after{
+        content: ' ';
+        width: 100%;
+        display: block;
+        padding-top: 2px;
+        margin-top: 20px;
+        background-color: rgb(180, 180, 180); 
+    }
+    #iframe{
+        margin-top: 20px;
+        width: 100%;
+        height: calc(100% - 100px);
+        border: 0;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="active" id='home'>Home</a></li>
+            <li><a id="activity">Activity</a></li>
+            <li><a id="syllabus">Syllabus</a></li>
+          </ul>
+    </nav>
+    <iframe src="./home.html" id="iframe"></iframe>
+    <script>
+        document.getElementById('home').addEventListener('click', function(){
+            document.getElementById('home').className = "active";
+            document.getElementById('activity').className = "";
+            document.getElementById('syllabus').className = "";
+            document.getElementById('iframe').src = "./home.html";
+        });
+        document.getElementById('activity').addEventListener('click', function(){
+            document.getElementById('home').className = "";
+            document.getElementById('activity').className = "active";
+            document.getElementById('syllabus').className = "";
+            document.getElementById('iframe').src ="./activity.html";
+        });
+        document.getElementById('syllabus').addEventListener('click', function(){
+            document.getElementById('home').className = "";
+            document.getElementById('activity').className = "";
+            document.getElementById('syllabus').className = "active";
+            document.getElementById('iframe').src = "./syllabus.html";
+        });
+    </script>
+</body>
+</html>
