@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 2|Aman Kumar - 20BSC3907</title>
+    <style>
+        p{
+            background-color: rgb(192, 246, 255);
+            border-radius: 8px;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <p id="var-declare">Variable Declaration and assignment: </p>
+    <p id="function-return-text">Define a function that returns a text: </p>
+    <p id="function-return-uppercase">Define a function that return a charcter of string in uppercase: </p>
+    <p id="function-return-lowercase">Define a function that return a charcter of string in lowercase: </p>
+    <p id="function-first-array">Function that return first element of array: </p>
+    <script>
+        let varDeclare = document.getElementById('var-declare');
+        let num;
+        num = 10;
+        varDeclare.innerHTML += num;
+        function returnText(){
+            return "Hello, World";
+        }
+        let functionText = document.getElementById('function-return-text');
+        functionText.innerHTML += returnText();
+        let string = "Hello, World";
+        let functionUppercase = document.getElementById('function-return-uppercase');
+        function stringUppercase(string){
+            return string.toUpperCase();
+        }
+        functionUppercase.innerHTML += stringUppercase(string);
+        let functionLowercase = document.getElementById('function-return-lowercase');
+        function stringLowercase(string){
+            return string.toLowerCase();
+        }
+        functionLowercase.innerHTML += stringLowercase(string);
+        let arr = [1, 2, 3, 4, 5];
+        let functionArray = document.getElementById('function-first-array');
+        function firstElement(array){
+            return array[0];
+        }
+        functionArray.innerHTML += firstElement(arr);
+    </script>
+</body>
+</html>
